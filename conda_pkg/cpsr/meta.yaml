@@ -1,0 +1,29 @@
+{% set name = 'pcgr' %}
+{% set version = os.environ.TRAVIS_TAG %}
+
+package:
+  name: cpsr
+  version: {{ version }}
+
+source:
+  path: ../../../
+
+build:
+  number: 0
+  rpaths:
+    - lib/
+    - lib/R/library/
+
+requirements:
+  run:
+    - pcgr
+
+test:
+  commands:
+    - cpsr.py --version
+
+about:
+  home: https://github.com/sigven/cpsr
+  license: MIT
+  summary: Cancer Predisposition Sequencing Reporter (CPSR) - prioritization of germline variants in cancer
+
