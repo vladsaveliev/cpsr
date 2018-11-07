@@ -1,4 +1,4 @@
-{% set name = 'cpsr' %}
+{% set name = 'cpsr_dockerized' %}
 {% set version = os.environ.TRAVIS_TAG %}
 
 package:
@@ -13,7 +13,8 @@ build:
 
 requirements:
   run:
-    - pcgr
+    - python
+    - pcgr_dockerized
 
 test:
   commands:
