@@ -12,8 +12,8 @@ import platform
 import toml
 from argparse import RawTextHelpFormatter
 
-pcgr_version = '0.8.4.7'
-cpsr_version = '0.5.2.3'
+pcgr_version = '0.8.4.8'
+cpsr_version = '0.5.2.4'
 db_version = 'PCGR_DB_VERSION = 20191116'
 vep_version = '98'
 global debug
